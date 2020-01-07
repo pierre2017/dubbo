@@ -36,7 +36,7 @@ public class DemoServiceImpl implements DemoService {
     public String test01;
 
     private DemoDAO demoDAO;
-
+    @Override
     public String sayHello(String name) {
         System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] Hello " + name + ", request from consumer: " + RpcContext.getContext().getRemoteAddress());
         return "Hello " + name + ", response form provider: " + RpcContext.getContext().getLocalAddress();
@@ -103,22 +103,22 @@ public class DemoServiceImpl implements DemoService {
 
     }
 
-    @Override
+//    @Override
     public void demo(Sex sex) {
 
     }
 
-    @Override
+//    @Override
     public void hello(String name) {
         System.out.println("hello:" + name);
     }
 
-    @Override
+//    @Override
     public void hello01(String name) {
         System.out.println("hello01:" + name);
     }
 
-    @Override
+//    @Override
     public void hello02(String name) {
         System.out.println("hello02:" + name);
     }

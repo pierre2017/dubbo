@@ -22,7 +22,7 @@ limitations under the License.
         <artifactId>dubbo-demo</artifactId>
         <version>2.6.1</version>
     </parent>
-    <artifactId>dubbo-generic-reference-demo-consumer</artifactId>
+    <artifactId>dubbo-generic-reference-demo-consumer1</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>The demo consumer module of dubbo project</description>
@@ -58,6 +58,12 @@ limitations under the License.
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-remoting-netty</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-demo-api</artifactId>
+            <version>2.6.1</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

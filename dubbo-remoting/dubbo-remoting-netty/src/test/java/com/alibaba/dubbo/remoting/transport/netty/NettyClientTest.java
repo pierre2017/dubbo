@@ -37,12 +37,12 @@ public class NettyClientTest {
     static Server server;
 
 
-    @BeforeClass
+//    @BeforeClass
     public static void setUp() throws Exception {
         server = Exchangers.bind(URL.valueOf("exchange://localhost:10001?server=netty"), new TelnetServerHandler());
     }
 
-    @AfterClass
+//    @AfterClass
     public static void tearDown() throws Exception {
         try {
             if (server != null)
@@ -56,7 +56,7 @@ public class NettyClientTest {
         Thread.sleep(60 * 1000 * 50);
     }
 
-    @Test
+//    @Test
     public void testClientClose() throws Exception {
         List<ExchangeChannel> clients = new ArrayList<ExchangeChannel>(100);
         for (int i = 0; i < 100; i++) {
@@ -70,7 +70,7 @@ public class NettyClientTest {
         Thread.sleep(1000);
     }
 
-    @Test
+//    @Test
     public void testServerClose() throws Exception {
         for (int i = 0; i < 100; i++) {
             Server aServer = Exchangers.bind(URL.valueOf("exchange://localhost:" + (5000 + i) + "?client=netty"), new TelnetServerHandler());

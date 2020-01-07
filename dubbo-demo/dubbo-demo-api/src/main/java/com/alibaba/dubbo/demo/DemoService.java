@@ -56,13 +56,13 @@ public interface DemoService {
 
     interface Save{}
 
-    void demo(Sex sex);
-
-
-    void hello(String name);
-
-    void hello01(String name);
-
-    void hello02(String name);
+//    void demo(Sex sex);
+//
+//
+//    void hello(String name);
+//
+//    void hello01(String name);
+//
+//    void hello02(String name);
 
 }

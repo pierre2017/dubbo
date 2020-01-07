@@ -488,7 +488,7 @@ public class RegistryDirectoryTest {
                 new Object[]{"getXXX1", new String[]{"Enum"}, new Object[]{Param.MORGAN}});
 
         List invokers = registryDirectory.list(invocation);
-        Assert.assertEquals(1, invokers.size());
+        Assert.assertEquals(3, invokers.size());
     }
 
     /**

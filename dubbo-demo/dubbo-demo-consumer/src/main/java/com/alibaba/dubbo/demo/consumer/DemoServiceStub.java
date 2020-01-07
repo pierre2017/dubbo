@@ -80,22 +80,22 @@ public class DemoServiceStub implements DemoService {
 
     }
 
-    @Override
+//    @Override
     public void demo(Sex sex) {
 
     }
 
-    @Override
+//    @Override
     public void hello(String name) {
 
     }
 
-    @Override
+//    @Override
     public void hello01(String name) {
 
     }
 
-    @Override
+//    @Override
     public void hello02(String name) {
 
     }
